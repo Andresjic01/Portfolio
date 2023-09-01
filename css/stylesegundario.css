@@ -1,0 +1,599 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+    --colorPrimario: #303030;
+    --colorSegundario: #02a1f6;
+    --segundocolor: #02a1f6;
+    --tercercolor: tomato;
+}
+
+.idioma {
+    position: fixed;
+    right: 0;
+    top: 150px;
+    z-index: 99;
+}
+
+.idiomas {
+    width: 80px;
+    padding: 35px 0 0 15px;
+    position: absolute;
+    right: -120px;
+    transition: 1s;
+    top: -55px;
+}
+
+.idiomas button {
+    background: var(--colorSegundario);
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 40px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+.idiomas.active {
+    right: 13px;
+}
+
+.aidiomas {
+    background: var(--colorSegundario);
+    color: #ffffff;
+    padding: 0px 0px;
+    transform: rotate(-90deg);
+    position: relative;
+    right: -34px;
+    transition: 1s;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    
+}
+
+.aidiomas.active {
+    right: 74px;
+}
+
+
+
+.tema-color{
+    position: fixed;
+    right: 0;
+    top: 300px;
+    z-index: 99;
+    
+    
+}
+.contcolores{
+    width: 80px;
+    padding: 15px 0;
+    position: absolute;
+    right: -120px;
+    transition: 1s;
+    top: -55px;
+}
+
+.contcolores.active{
+    right: 0;
+}
+
+.contcolores button{
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: transparent;
+    border-radius: 40px;
+    margin: 10px auto;
+    
+}
+
+.contcolores button:nth-child(1){
+    background-color: #2ecb80;
+}
+.contcolores button:nth-child(2){
+    background-color: var(--segundocolor);
+}
+.contcolores button:nth-child(3){
+    background-color: var(--tercercolor);
+}
+
+.open-panel{
+    background: var(--colorSegundario);
+    color: #ffffff;
+    padding: 10px 50px;
+    transform: rotate(-90deg);
+    position: relative;
+    right: -67px;
+    transition: 1s;
+    font-size: 20px;
+}
+.open-panel.active{
+    right: 37px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+/* Header */
+.navbar-toggler {
+    background-color: var(--colorSegundario);
+}
+
+nav.bg-color {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: var(--colorSegundario);
+}
+
+.bg-color a {
+    color: var(--colorSegundario);
+}
+
+.bg-color a:hover {
+    background-color: var(--colorSegundario);
+    color: white;
+    height: 100%;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    padding-top: 15%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.720), rgba(0, 0, 0, 0.720) 100%), url(../img/Fondo.jpg);
+    justify-content: center;
+    text-align: center;
+
+    background-size: 100%;
+}
+
+#hero img {
+    width: 180px;
+    height: 220px;
+    border-radius: 150px;
+}
+
+#hero h2 {
+    font-size: 80px;
+    color: var(--colorSegundario);
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 30px;
+    color: #ffffff80;
+}
+
+/* Main */
+
+main {
+    position: relative;
+    background-color: var(--colorPrimario);
+    color: white;
+}
+
+/* Sobre mi */
+#sobremi {
+    width: 100%;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+#sobremi img {
+    width: 100%;
+}
+
+#sobremi .informacion {
+    width: 100%;
+}
+
+#sobremi h2 {
+    margin-bottom: 30px;
+
+}
+
+#sobremi p {
+    font-size: 20px;
+}
+
+#sobremi h2 span {
+    border-bottom: var(--colorSegundario) solid 2px;
+}
+
+
+.borde h3 {
+    font-size: 20px;
+}
+
+.borde {
+    margin-top: 100px;
+    border: var(--colorSegundario) solid 2px;
+}
+
+/* Habilidades */
+#habilidades {
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-top: 105px;
+}
+
+#estudios ul li {
+    padding: 35px;
+    list-style: url(../img/punto.png);
+    position: relative;
+    font-size: 20px;
+
+}
+
+#habilidades h2 {
+    text-align: center;
+}
+
+#habilidades #m {
+    height: 200px;
+    border-left: white solid 2px;
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 125px;
+
+}
+
+.habilidad h3 {
+    font-size: 20px;
+    padding-top: 10px;
+
+}
+
+.habilidad img {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* estudio */
+#estudio {
+    margin-left: 100px;
+}
+
+/* Lenguajes */
+#estrella {
+    margin-left: 190px;
+    padding-top: 20px;
+}
+
+/* Perfil profecional */
+#perfil {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+}
+
+#perfil img {
+    width: 100%;
+}
+
+#perfil h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#perfil p {
+    font-size: 20px;
+}
+
+/* Portafolio */
+#portafolio {
+    width: 100%;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 130px;
+}
+
+#portafolio .slider1 .tarjeta {
+
+    padding: 20px;
+    margin: auto !important;
+    margin-bottom: 25px !important;
+}
+
+#portafolio .tContenido {
+    display: none;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+#portafolio h2,
+p {
+    text-align: center;
+}
+
+#portafolio .slider1 a {
+    text-decoration: none;
+}
+
+#portafolio .visitar {
+    background-color: var(--colorSegundario);
+    margin: 0%;
+    margin-right: 5px;
+}
+
+#portafolio .volver {
+    background-color: var(--colorSegundario);
+    margin-left: 5px;
+}
+
+.slider1 a h3 {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+
+#primerP {
+    background: url(../img/motorsweb.png);
+    background-size: 100%;
+    width: 300px;
+    height: 325px;
+    border-radius: 10px;
+    color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#segundoP {
+    background: url(../img/motorsweb.png);
+    background-size: 100%;
+    width: 300px;
+    height: 325px;
+    color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#tercerP {
+    background: url(../img/motorsweb.png);
+    background-size: 100%;
+    width: 300px;
+    height: 325px;
+    color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#primerP:hover {
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26) 100%), url(../img/motorsweb.png);
+    transform: scale(1.1);
+}
+
+#segundoP:hover {
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26) 100%), url(../img/motorsweb.png);
+    transform: scale(1.1);
+}
+
+#tercerP:hover {
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26) 100%), url(../img/motorsweb.png);
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: var(--colorSegundario);
+    padding: 60px 0px;
+}
+
+footer .redes img {
+    width: 24px;
+    height: 24px;
+}
+
+/* resposive para tablet */
+@media screen and (min-width:600px) and (max-width:1024px) {
+    #hero {
+        padding-top: 320px;
+    }
+
+    #sobremi .col-md-7 {
+        width: 95%;
+        background: var(--colorSegundario);
+        text-align: center;
+        border-radius: 30px;
+        margin: auto;
+    }
+
+    #sobremi img {
+        width: 0;
+    }
+
+    #sobremi .borde {
+        margin-top: 30px;
+        border: var(--colorPrimario) solid 1px;
+        border-radius: 20px;
+        width: 97%;
+        text-align: left;
+        margin: auto;
+    }
+
+    /* Habilidades */
+    #habilidades {
+        /* margin-top: 15px;
+        padding-top: 80px; */
+        display: flex;
+        justify-content: left;
+    }
+
+    #habilidades #estudios {
+        width: 50%;
+        padding: auto;
+        margin: auto;
+    }
+
+    #habilidades .col-md-6 {
+        width: 50%;
+        text-align: left;
+    }
+
+    #habilidades #estrella {
+        margin-left: 30px;
+    }
+
+    #habilidades #m {
+        margin-left: 25px;
+        width: 10px;
+    }
+
+    #habilidades #estudio{
+        margin-left: 0px;
+    }
+
+    #perfil {
+        text-align: center;
+        background-color: var(--colorSegundario);
+        width: 95%;
+        margin: auto;
+        border-radius: 30px;
+        padding: 20px;
+    }
+
+    #perfil img {
+        width: 0px;
+    }
+    #perfil .col-lg-7{
+        width: 100%;
+    }
+
+    #portafolio .slider1 .tarjeta {
+        width: 30%;
+        height: 230px;
+        margin: 10px !important;
+        
+    }
+
+    #portafolio .tContenido p{
+        width: 100%;
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+        
+    }
+    #portafolio .slider1 .tContenido{
+        width: 60%;
+        margin-top: 30px;
+    }
+
+}
+
+/* resposive para celular */
+@media screen and (min-width:320px) and (max-width:580px) {
+
+
+
+    #hero {
+        padding-top: 300px;
+    }
+    
+    /* Sobre mi responsive */
+    #sobremi .col-md-7 {
+        width: 95%;
+        background: var(--colorSegundario);
+        text-align: center;
+        border-radius: 30px;
+        margin: auto;
+    }
+
+    #sobremi img {
+        width: 0;
+    }
+
+    #sobremi .borde {
+        margin-top: 30px;
+        border: var(--colorPrimario) solid 1px;
+        border-radius: 30px;
+        width: 97%;
+        text-align: left;
+        margin: auto;
+    }
+
+    /* Habilidades */
+    #habilidades {
+        margin-top: 15px;
+        padding-top: 80px;
+    }
+
+    #habilidades .col-md-5 {
+        width: 100%;
+    }
+
+    #habilidades .col-md-6 {
+        width: 100%;
+    }
+
+    #habilidades #estrella {
+        margin-left: 110px;
+    }
+
+    #habilidades #m {
+
+        width: 10px;
+    }
+
+    /* Perfil profeciona */
+    #perfil {
+        text-align: center;
+        background-color: var(--colorSegundario);
+        width: 95%;
+        margin: auto;
+        border-radius: 30px;
+    }
+
+    #perfil img {
+        width: 0px;
+    }
+
+    /* Portafolio */
+    #portafolio .col-md-4 {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #portafolio .slider1 article {
+        margin-bottom: 25px;
+        width: 330px;
+    }
+
+
+
+}
